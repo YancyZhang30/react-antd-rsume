@@ -1,0 +1,70 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+html {
+  font-size: 16px;
+}
+iframe {
+  border: 0;
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+.h-screen {
+  height: 100vh;
+}
+.form-creator {
+  padding-top: 10px;
+  padding-right: 24px;
+}
+
+.text-3xl {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+}
+.header {
+  padding: 24px;
+@apply shadow;
+  overflow: hidden;
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.remove-icon {
+  position: absolute;
+  right: 12px;
+  top: 40%;
+}
+.relative {
+  position: relative;
+}
+.tip {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background: #efefef;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #666;
+}
