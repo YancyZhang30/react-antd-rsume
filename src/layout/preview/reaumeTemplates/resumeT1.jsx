@@ -1,10 +1,12 @@
 import React from "react";
 import pdf from "@react-pdf/renderer";
+import f from "../../../asset/huakang.ttf";
+
 const { Page, View, Text, StyleSheet, PDFViewer, Font, Image} = pdf;
 
 Font.register({
     family: "MyFont",
-    src: "/huakang.ttf",
+    src: f,
 });
 
 

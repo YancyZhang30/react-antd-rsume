@@ -1,10 +1,13 @@
 import React from "react";
 import pdf from "@react-pdf/renderer";
+import f from "../../../asset/huakang.ttf";
+import top_img from "../../../asset/cvbg_head_tpl108.png";
+
 const { Page, View, Text, StyleSheet, PDFViewer, Font, Image} = pdf;
 
 Font.register({
     family: "MyFont",
-    src: "/huakang.ttf",
+    src: f,
 });
 
 
@@ -68,7 +71,7 @@ export const ResumeT2 = ({state})=>{
     return (
         <Page size="A4" style={styles.page}>
             <View style={{position: "fixed", top: 30, height: 60}}>
-                <Image src={"https://static.jianliben.com/images/cvbg_head_tpl108.png"}></Image>
+                <Image src={top_img}></Image>
             </View>
             <View style={styles.avatar_box}>
                 <View style={{position: "fixed", top: -50, height: 120}}>

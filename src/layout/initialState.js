@@ -1,6 +1,6 @@
 import React from "react";
 import {message} from "antd";
-import avatar from "../asset/avatar.jpg";
+
 export const initialState = {
     index: 1,
     profile: {
@@ -13,7 +13,7 @@ export const initialState = {
         positionTitle: "前端开发工程师",
     },
     avatar: {
-        url: avatar,
+        url: new URL(`../asset/avatar.jpg`, import.meta.url).href,
         display: true,
         circle: true,
         theme: "1",

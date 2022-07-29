@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import HomeHeader from "./homeHeader";
 import "./index.css";
 import {Button} from "antd";
-import image from "../../asset/p1_img.png";
+import p1_img from "../../asset/p1_img.png"
 
 export default function HomePage(){
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ export default function HomePage(){
                     </div>
 
                     <div className="p1-right-box">
-                        <img src={image} alt=""/>
+                        <img src={p1_img} alt=""/>
                     </div>
                 </div>
             </div>
