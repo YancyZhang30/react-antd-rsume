@@ -1,7 +1,7 @@
 import React from "react";
-import {GithubOutlined} from "@ant-design/icons";
 import logo from "../../asset/logo.png";
-
+import giteeLogo from "../../asset/gitee-logo.svg";
+import gitgubLogo from "../../asset/github-logo.svg";
 export default function HomeHeader(){
 
     return(
@@ -12,7 +12,8 @@ export default function HomeHeader(){
                 </div>
 
                 <div className="about">
-                    <a href="https://github.com/YancyZhang30/react-antd-rsume.git"><GithubOutlined /></a>
+                    <a href="https://github.com/YancyZhang30/react-antd-rsume.git"><img src={giteeLogo} alt=""/></a>
+                    <a href="https://github.com/YancyZhang30/react-antd-rsume.git"><img src={gitgubLogo} alt=""/></a>
                 </div>
             </header>
         </div>
